@@ -25,7 +25,7 @@ public class FormTest {
         $("#userEmail").setValue("aivanova@test.com");
         $("#userNumber").setValue("8934567890");
 
-        $(byText("Female")).click();
+        $("#genterWrapper").$(byText("Female")).click();
 
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("July");
@@ -33,7 +33,7 @@ public class FormTest {
         $(".react-datepicker__day--001").click();
 
         $("#subjectsInput").setValue("English").pressEnter();
-        $(byText("Music")).click();
+        $("#hobbiesWrapper").$(byText("Music")).click();
         $("#uploadPicture").uploadFile(new File("src/test/resources/ozero.jpg"));
         $("#currentAddress").setValue("address");
         $("#react-select-3-input").setValue("Haryana").pressEnter();
